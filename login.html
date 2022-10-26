@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <link rel="shortcut icon" href="assets/Img_Icon_Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/loginStyle.css" />
+    <script src="script/validarLogin.js"></script>
+    <script src="script/modal.js"></script>
+    <title>Fleming</title>
+  </head>
+  <body>
+    <div class="containerLogo">
+      <span class="span-logo"
+          ><a href="index.html"><h1>Fleming</h1></a>
+          <img
+            class="img-logo-gota"
+            src="assets/Img-logo-azul.png"
+            alt="logoGotas"
+        /></span>
+    </div>
+    <section class="sectionLogin">
+      <div class="containerLogin">
+        <div class="containerImgLogin">
+          <img src="assets/Img_Login.svg" alt="Imagem de Login" />
+        </div>
+        <div class="containerTextLogin">
+          <div><h2>Login</h2></div>
+          <div class="containerInput">
+            <label for="">E-mail</label>
+            <input placeholder="Digite o e-mail cadastrado" type="email" class="input1 " id="login"/>
+            <label for="">Senha</label>
+            <input type="password" placeholder="*********"  id="senha"/>
+          </div>
+          <div class="buttonLogin" onclick="validarLogin()"><a href="#" id="conectar">Conectar</a></div>
+          <p>Não é nosso cliente?<span class="linkCadastro" onclick="acao()"><a href="#"> Clique aqui</a></span></p>
+          
+        </div>
+        <div class="modal">
+          <div onclick="fechar()" class="fechar">
+            <img src="assets/Img_close.svg" alt="" />
+          </div>
+          <div class="containerModal">
+            <div class="contatoArea">
+              <span>Informe o nome para contato:</span>
+              <input type="text" id="nome">
+              <span>Informe o email para contato:</span>
+              <input type="email" id="email">
+              <span>Informe as principais duvidas para melhorar o contato:</span>
+              <textarea name="" id="pergunta" cols="50" rows="6"></textarea>
+              <div onclick="fechar()" class="fechar"><span>Enviar</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+        
+    </section>
+  </body>
+</html>

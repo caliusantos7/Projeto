@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/Img_Icon_Logo.png"
+      type="image/x-icon" />
+    <link rel="stylesheet" href="css/loginStyle.css" />
+    <link rel="stylesheet" href="css/cadastro.css" />
+    <script src="script/validarCadastro.js"></script>
+    <title>Cadastro</title>
+  </head>
+  <body>
+    <section class="container">
+      <div class="containerLogo">
+        <span class="span-logo"
+          ><a href="dashBoard.html"><h1>Fleming</h1></a>
+          <img
+            class="img-logo-gota"
+            src="assets/Img-logo-azul.png"
+            alt="logoGotas"
+        /></span>
+      </div>
+      <div class="title"><h2>CADASTRO</h2></div>
+      <div class="container2">
+        <div class="imgCadastro">
+          <img src="assets/Img_Cadastro.svg" alt="" />
+        </div>
+
+        <div class="containerCadastro">
+          <form action="" class="containerCadastro">
+            <div class="containerInput1">
+            <label for="">Nome</label>
+            <input type="text" id="ipt_nome" placeholder="Digite o nome" />
+            <label for="">CPF</label>
+            <input type="text" id="ipt_cpf" placeholder="Digite o CPF" />
+            <label for="">Telefone Empresarial</label>
+            <input type="tel" id="ipt_telEmpresarial" placeholder="(xx) xxxx-xxxx" />
+            <label for="">Telefone Celular</label>
+            <input type="tel" id="ipt_telCelular" placeholder="(xx) xxxxx-xxxx" />
+          </div>
+          <div class="containerInput2">
+            <label for="">E-mail</label>
+            <input type="email" id="ipt_email" placeholder="e-mail" />
+            <label for="">Senha</label>
+            <input type="password" id="ipt_senha" placeholder="*********" />
+            <label for="">Confirme a Senha</label>
+            <input type="password" id="ipt_senhaConfirma" placeholder="*********" />
+            <label for="">Cargo</label>
+            <input type="text" id="ipt_cargo" placeholder="Digite o cargo" />
+          </div>
+        </div>
+      </div>
+      <div class="container3">  
+      
+      <div class="buttonContinuar"  onclick="validarCadastro()" ><a href="#" id="finalizar">CADASTRAR</a></div>
+      </div>
+      </form>
+          
+    </section>
+  </body>
+</html>

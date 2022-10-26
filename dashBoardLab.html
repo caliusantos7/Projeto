@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>DashBoard</title>
+    <link
+      rel="shortcut icon"
+      href="assets/Img_Icon_Logo.png"
+      type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="stylesheet" href="css/dashBoard.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <span class="span-logo"
+          ><h1>Fleming</h1>
+          <img
+            class="img-logo-gota"
+            src="assets/Img_Icon_Logo.png"
+            alt="logoGotas"
+        /></span>
+
+        <ul class="navbar">
+          <li>
+            <a href="#">Salas</a>
+            <ul>
+              <li><a href="dashBoardSala.html">Sala01</a></li>
+              <li><a href="dashBoardSala.html">Sala02</a></li>
+              <li><a href="dashBoardSala.html">Sala03</a></li>
+              <li><a href="dashBoardSala.html">Sala04</a></li>
+              <li><a href="dashBoardSala.html">Sala05</a></li>
+              <li><a href="dashBoardSala.html">Sala06</a></li>
+              <li><a href="dashBoardSala.html">Sala07</a></li>
+              <li><a href="dashBoardSala.html">Sala08</a></li>
+              <li><a href="dashBoardSala.html">Sala09</a></li>
+              <li><a href="dashBoardSala.html">Sala10</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" style="color: black">Laboratórios</a>
+            <ul>
+              <li><a href="">Laboratório01</a></li>
+              <li><a href="">Laboratório02</a></li>
+              <li><a href="">Laboratório03</a></li>
+              <li><a href="">Laboratório04</a></li>
+              <li><a href="">Laboratório05</a></li>
+            </ul>
+          </li>
+          <li><a href="dashBoard.html">Home</a></li>
+          <a href="#">
+            <a href="#"> Olá, Usuário</a>
+            <li>
+              <img src="assets/Img_User.svg" alt="" />
+              <ul>
+                <li>
+                  <a href="cadastro.html" style="font-size: 0.7vw; padding: 5px"
+                    >Cadastrar Usuário</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html" style="font-size: 0.7vw; padding: 5px"
+                    > <i class="fa-solid fa-arrow-right-from-bracket"></i> Sair </a
+                  >
+                </li>
+              </ul>
+            </li></a
+          >
+        </ul>
+      </nav>
+    </header>
+    <section class="container section-container">
+      <div class="containerDash">
+        <div class="containerKPI">
+          <div class="legenda">
+            <div class="legendaAlertas">
+              <div class="legendaAler padrao">
+                <div class="card">
+                  <div class="imgAler">
+                    <img src="assets/Img_Term_BaixaUmidade.svg" alt="" />
+                  </div>
+                  <div class="textAler">
+                    <p>Alerta Critico - Umidade Baixa - 42%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="legendaAler padrao">
+                <div class="card">
+                  <div class="imgAler">
+                    <img src="assets/Img_Term_UmidadeIdeal.svg" alt="" />
+                  </div>
+                  <div class="textAler">
+                    <p>Umidade Controlada - 53% a 52%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="legendaAler padrao">
+                <div class="card">
+                  <div class="imgAler">
+                    <img src="assets/Img_Term_AltaUmidade.svg" alt="" />
+                  </div>
+                  <div class="textAler">
+                    <p>Alerta Critico - Umidade Alta - 62%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="legendaGrafico">
+              <div class="legendasGra padrao">
+                <h2 class="title">Indicativos de Tempo de Perda</h2>
+                <p class="textLegenda">
+                  Até 60min - Não Significativo<br />
+                  De 60min a 180min - Perdas Significativas<br />
+                  Acima de 180min - Perdas Criticas
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="kpis">
+            <div class="kpi padrao">
+              <div class="containerKPI2">
+                <div class="textKPI">
+                  <h1 class="title">
+                    Salas - ALERTA <br>
+                    Baixa Umidade
+                  </h1>
+                </div>
+                <div class="imgKPI">
+                  <img src="assets/Img_Term_BaixaUmidade.svg" alt="" />
+                </div>
+                <div class="text2KPI">
+                  <p class="textLegenda">Sala1, Sala2</p>
+                  <h1 class="title">(Atual)</h1>
+                </div>
+              </div>
+            </div>
+            <div class="kpi padrao">
+              <div class="containerKPI2">
+                <div class="textKPI">
+                  <h1 class="title">
+                    Salas - ALERTA <br />
+                    Alta Umidade
+                  </h1>
+                </div>
+                <div class="imgKPI">
+                  <img src="assets/Img_Term_AltaUmidade.svg" alt="" />
+                </div>
+                <div class="text2KPI">
+                  <p class="textLegenda">Sala4, Sala5</p>
+                  <h1 class="title">(Atual)</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="containerGraficos">
+          <div class="grafico">
+            <div
+              class="chart-container"
+              style="position: relative; height: 35vh; width: 35vw">
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+          <div class="grafico" style="display: flex; justify-content: center">
+            <div style="height: 18vh; width: 18vw">
+              <canvas id="myChart2"></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    const labels = ["Sala1", "Sala2", "Sala4", "Sala5"];
+    const data = {
+      labels: labels,
+      datasets: [
+        {
+          label: "Duração do estado de alerta das salas de produção (min)",
+          data: [10, 20, 65, 70],
+          backgroundColor: ["rgba(66, 120, 152, 0.6)"],
+          borderColor: ["rgb(66, 120, 152)"],
+          borderWidth: 1,
+        },
+      ],
+    };
+
+    const config = {
+      type: "bar",
+      data: data,
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+          },
+        },
+      },
+    };
+  </script>
+  <script>
+    const myChart = new Chart(document.getElementById("myChart"), config);
+  </script>
+  <script>
+    const data2 = {
+      labels: [
+        "Quantidade de Salas em Alerta",
+        "Quantidade de Salas Normalizadas",
+      ],
+      datasets: [
+        {
+          label: "Percentual de salas em alerta",
+          data: [4, 6],
+          backgroundColor: ["rgb(255, 99, 132)", "rgb(66, 120, 152)"],
+          hoverOffset: 1,
+        },
+      ],
+    };
+    const config2 = {
+      type: "doughnut",
+      data: data2,
+    };
+  </script>
+  <script>
+    const myChart2 = new Chart(document.getElementById("myChart2"), config2);
+  </script>
+</html>

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script/modal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>DashBoard</title>
+    <link
+      rel="shortcut icon"
+      href="assets/Img_Icon_Logo.png"
+      type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dashBoard.css" />
+    <link rel="stylesheet" href="css/dashBoardSala.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <span class="span-logo"
+          ><h1>Fleming</h1>
+          <img
+            class="img-logo-gota"
+            src="assets/Img_Icon_Logo.png"
+            alt="logoGotas"
+        /></span>
+
+        <ul class="navbar">
+          <li>
+            <a href="#" style="color: black">Salas</a>
+            <ul>
+              <li><a href="">Sala01</a></li>
+              <li><a href="">Sala02</a></li>
+              <li><a href="">Sala03</a></li>
+              <li><a href="">Sala04</a></li>
+              <li><a href="">Sala05</a></li>
+              <li><a href="">Sala06</a></li>
+              <li><a href="">Sala07</a></li>
+              <li><a href="">Sala08</a></li>
+              <li><a href="">Sala09</a></li>
+              <li><a href="">Sala10</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Laboratórios</a>
+            <ul>
+              <li><a href="dashBoardLab.html">Laboratório01</a></li>
+              <li><a href="dashBoardLab.html">Laboratório02</a></li>
+              <li><a href="dashBoardLab.html">Laboratório03</a></li>
+              <li><a href="dashBoardLab.html">Laboratório04</a></li>
+              <li><a href="dashBoardLab.html">Laboratório05</a></li>
+            </ul>
+          </li>
+          <li><a href="dashBoard.html">Home</a></li>
+          <a href="#">
+            <a href="#"> Olá, Usuário</a>
+            <li>
+              <img src="assets/Img_User.svg" alt="" />
+              <ul>
+                <li>
+                  <a href="cadastro.html" style="font-size: 0.7vw; padding: 5px"
+                    >Cadastrar Usuário</a
+                  >
+                </li>
+                <li>
+                  <a href="index.html" style="font-size: 0.7vw; padding: 5px"
+                    > <i class="fa-solid fa-arrow-right-from-bracket"></i>Sair</a
+                  >
+                </li>
+              </ul>
+            </li></a
+          >
+        </ul>
+      </nav>
+    </header>
+    <section class="container section-container section-container">
+      <div class="containerDash">
+        <div class="containerKPI">
+          <div class="legenda">
+            <div class="legendaAlertas">
+              <div class="legendaAler padrao">
+                <div class="card">
+                  <div class="imgAler">
+                    <img src="assets/Img_Term_AltaUmidade1.svg" alt="" />
+                  </div>
+                  <div class="textAler">
+                    <p>Alerta alta umidade. 62%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="legendaAler padrao">
+                <div class="card">
+                  <div class="imgAler">
+                    <img src="assets/Img_Term_AceitavelUmidade.svg" alt="" />
+                  </div>
+                  <div class="textAler">
+                    <p>Umidade aceitável. 46%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="legendaAler padrao">
+                <div class="card">
+                  <div class="imgAler">
+                    <img src="assets/Img_Term_BaixaUmidade1.svg" alt="" />
+                  </div>
+                  <div class="textAler">
+                    <p>Alerta baixa umidade. 43%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="legendaAlertas">
+              <div class="legendaAler padrao">
+                <div class="card">
+                  <div class="imgAler">
+                    <img src="assets/Img_Term_AltaUmidade2.svg" alt="" />
+                  </div>
+                  <div class="textAler">
+                    <p>Emergência alta umidade. 64%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="legendaAler padrao">
+                <div class="card">
+                  <div class="imgAler">
+                    <img src="assets/Img_Term_UmidadeIdeal.svg" alt="" />
+                  </div>
+                  <div class="textAler">
+                    <p>Umidade controlada. Ideal 53% a 52%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="legendaAler padrao">
+                <div class="card">
+                  <div class="imgAler">
+                    <img src="assets/Img_Term_BaixaUmidade2.svg" alt="" />
+                  </div>
+                  <div class="textAler">
+                    <p>Emergência baixa umidade. 41%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="legendaAlertas">
+              <div class="legendaAler padrao">
+                <div class="card">
+                  <div class="imgAler">
+                    <img src="assets/Img_Term_AltaUmidade.svg" alt="" />
+                  </div>
+                  <div class="textAler">
+                    <p>Alerta crítico alta umidade. 65%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="legendaAler padrao">
+                <div class="card">
+                  <div class="imgAler">
+                    <img src="assets/Img_Term_AceitavelUmidade.svg" alt="" />
+                  </div>
+                  <div class="textAler">
+                    <p>Umidade aceitável. 59%</p>
+                  </div>
+                </div>
+              </div>
+              <div class="legendaAler padrao">
+                <div class="card">
+                  <div class="imgAler">
+                    <img src="assets/Img_Term_BaixaUmidade.svg" alt="" />
+                  </div>
+                  <div class="textAler">
+                    <p>Alerta crítico baixa umidade. 40%</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="kpis">
+            <div class="kpi padrao" onclick="acao()" style="cursor: pointer">
+              <div class="containerKPI2">
+                <div class="textKPI">
+                  <h1 class="title title2">Máxima umidade no dia</h1>
+                </div>
+                <div class="imgKPI">
+                  <img src="assets/Img_Term_AltaUmidade1.svg" alt="" />
+                </div>
+                <h1 class="title title2">62%</h1>
+                <div class="text2KPI">
+                  <p class="textLegenda title2">Área A</p>
+                </div>
+              </div>
+            </div>
+            <div class="kpi padrao" onclick="acao()" style="cursor: pointer">
+              <div class="containerKPI2">
+                <div class="textKPI">
+                  <h1 class="title title2">Mínima umidade no dia</h1>
+                </div>
+                <div class="imgKPI">
+                  <img src="assets/Img_Term_UmidadeIdeal.svg" alt="" />
+                </div>
+                <h1 class="title title2">53%</h1>
+                <div class="text2KPI">
+                  <p class="textLegenda title2">Área E</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal">
+        <div onclick="fechar()" class="fechar">
+          <img src="assets/Img_close.svg" alt="" />
+        </div>
+        <div class="containerModal">
+          <div class="imgSalas">
+            <img src="assets/Img_SalaDeProdução.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container section-container cont-graf">
+      <div class="containerGraficosSala">
+        <div class="cardGraficos">
+          <h2 class="title" style="font-size: 1.5vw">
+            Monitoramento da umidade nas áreas localizadas na sala de produção
+            (período de 45Min)
+          </h2>
+        </div>
+      </div>
+      <div class="containerGrafico">
+        <div class="container-Graf">
+          <div class="chart-container" style="height: 35vh; width: 35vw">
+            <canvas id="myChart"></canvas>
+          </div>
+          <div class="chart-container" style="height: 35vh; width: 35vw">
+            <canvas id="myChart2"></canvas>
+          </div>
+        </div>
+        <div class="container-Graf">
+          <div class="chart-container" style="height: 35vh; width: 35vw">
+            <canvas id="myChart3"></canvas>
+          </div>
+          <div class="chart-container" style="height: 35vh; width: 35vw">
+            <canvas id="myChart4"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container section-container cont-graf">
+      <div class="container-Graf">
+        <div class="chart-container" style="height: 38vh; width: 38vw">
+          <canvas id="myChart5"></canvas>
+        </div>
+      </div>
+      <div class="containerGraficosSala">
+        <div class="cardGraficos" style="margin-top: 80px">
+          <h2 class="title">
+            Áreas com umidade fora do aceitável no momento (período Min)
+          </h2>
+          <h2 class="title">Área A, Área B, Área C</h2>
+          <p class="titleGraf">Umidade aceitável entre 46% a 59%</p>
+        </div>
+        <div class="container-Graf">
+          <div class="chart-container" style="height: 45vh; width: 45vw">
+            <canvas id="myChart7"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container section-container">
+      <div class="containerGraficosSala">
+        <div class="cardGraficos">
+          <h2 class="title">
+            Variação da umidade nas áreas da sala de produção (período de 24H)
+          </h2>
+          <p class="titleGraf">Variação deve ser de até no máximo 5</p>
+        </div>
+        <div class="container-Graf">
+          <div class="chart-container" style="height: 45vh; width: 45vw">
+            <canvas id="myChart6"></canvas>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    const labels = [
+      "10:00",
+      "10:45",
+      "11:30",
+      "12:15",
+      "13:00",
+      "13:45",
+      "14:30",
+      "15:15",
+      "16:00",
+      "16:45",
+      "17:30",
+      "18:15",
+    ];
+
+    const data = {
+      labels: labels,
+      datasets: [
+        {
+          label: "Area A",
+          backgroundColor: "#00FF66",
+          borderColor: "#00FF66",
+          data: [53, 50, 55, 52, 56, 57, 52, 58, 60, 62, 64, 60],
+        },
+      ],
+    };
+
+    const config = {
+      type: "line",
+      data: data,
+      options: {},
+    };
+  </script>
+  <script>
+    const myChart = new Chart(document.getElementById("myChart"), config);
+  </script>
+  <script>
+    const labels1 = [
+      "10:00",
+      "10:45",
+      "11:30",
+      "12:15",
+      "13:00",
+      "13:45",
+      "14:30",
+      "15:15",
+      "16:00",
+      "16:45",
+      "17:30",
+      "18:15",
+    ];
+
+    const data2 = {
+      labels: labels1,
+      datasets: [
+        {
+          label: "Area B",
+          backgroundColor: "#084B99",
+          borderColor: "#084B99",
+          data: [45, 30, 52, 55, 52, 54, 50, 53, 55, 52, 53, 56],
+        },
+      ],
+    };
+    const config2 = {
+      type: "line",
+      data: data2,
+      options: {},
+    };
+  </script>
+  <script>
+    const myChart2 = new Chart(document.getElementById("myChart2"), config2);
+  </script>
+  <script>
+    const labels3 = [
+      "10:00",
+      "10:45",
+      "11:30",
+      "12:15",
+      "13:00",
+      "13:45",
+      "14:30",
+      "15:15",
+      "16:00",
+      "16:45",
+      "17:30",
+      "18:15",
+    ];
+
+    const data3 = {
+      labels: labels,
+      datasets: [
+        {
+          label: "Area C",
+          backgroundColor: "#40C89F",
+          borderColor: "#40C89F",
+          data: [53, 53, 54, 55, 55, 50, 54, 53, 55, 52, 53, 50],
+        },
+      ],
+    };
+    const config3 = {
+      type: "line",
+      data: data3,
+      options: {},
+    };
+  </script>
+  <script>
+    const myChart3 = new Chart(document.getElementById("myChart3"), config3);
+  </script>
+  <script>
+    const labels4 = [
+      "10:00",
+      "10:45",
+      "11:30",
+      "12:15",
+      "13:00",
+      "13:45",
+      "14:30",
+      "15:15",
+      "16:00",
+      "16:45",
+      "17:30",
+      "18:15",
+    ];
+
+    const data4 = {
+      labels: labels4,
+      datasets: [
+        {
+          label: "Area D",
+          backgroundColor: "#B5D0E0",
+          borderColor: "#B5D0E0",
+          data: [65, 64, 65, 62, 55, 63, 55, 53, 55, 52, 53, 51],
+        },
+      ],
+    };
+    const config4 = {
+      type: "line",
+      data: data4,
+      options: {},
+    };
+  </script>
+  <script>
+    const myChart4 = new Chart(document.getElementById("myChart4"), config4);
+  </script>
+  <script>
+    const labels5 = [
+      "10:00",
+      "10:45",
+      "11:30",
+      "12:15",
+      "13:00",
+      "13:45",
+      "14:30",
+      "15:15",
+      "16:00",
+      "16:45",
+      "17:30",
+      "18:15",
+    ];
+
+    const data5 = {
+      labels: labels5,
+      datasets: [
+        {
+          label: "Area E",
+          backgroundColor: "#345E77",
+          borderColor: "#345E77",
+          data: [52, 45, 45, 40, 50, 45, 53, 55, 52, 53, 50],
+        },
+      ],
+    };
+    const config5 = {
+      type: "line",
+      data: data5,
+      options: {},
+    };
+  </script>
+  <script>
+    const myChart5 = new Chart(document.getElementById("myChart5"), config5);
+  </script>
+  <script>
+    const labels6 = ["22/10/2022", "23/10/2022"];
+    const data6 = {
+      labels: labels6,
+      datasets: [
+        {
+          label: "Area A",
+          backgroundColor: "#00FF66",
+          borderColor: "#00FF66",
+          data: [53, 50],
+        },
+        {
+          label: "Area B",
+          backgroundColor: "#084B99",
+          borderColor: "#084B99",
+          data: [48, 60],
+        },
+        {
+          label: "Area C",
+          backgroundColor: "#40C89F",
+          borderColor: "#40C89F",
+          data: [47, 50],
+        },
+        {
+          label: "Area D",
+          backgroundColor: "#B5D0E0",
+          borderColor: "#B5D0E0",
+          data: [67, 60],
+        },
+        {
+          label: "Area E",
+          backgroundColor: "#345E77",
+          borderColor: "#345E77",
+          data: [55, 50],
+        },
+      ],
+    };
+    const config6 = {
+      type: "bar",
+      data: data6,
+      options: {},
+    };
+  </script>
+  <script>
+    const myChart6 = new Chart(document.getElementById("myChart6"), config6);
+  </script>
+  <script>
+    const labels7 = ["Área A", "Área B", "Área C"];
+    const data7 = {
+      labels: labels7,
+      datasets: [
+        {
+          label: "Tempo em que a área ficou fora do padrão (min)",
+          data: [30, 45, 65, 70],
+          backgroundColor: ["rgba(66, 120, 152, 0.6)"],
+          borderColor: ["rgb(66, 120, 152)"],
+          borderWidth: 1,
+        },
+      ],
+    };
+
+    const config7 = {
+      type: "bar",
+      data: data7,
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+          },
+        },
+      },
+    };
+  </script>
+  <script>
+    const myChart7 = new Chart(document.getElementById("myChart7"), config7);
+  </script>
+</html>
